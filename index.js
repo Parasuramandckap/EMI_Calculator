@@ -17,14 +17,14 @@ calculate.addEventListener("click", () => {
                 let emi = Math.round(amount * rate_percentage * (Math.pow((1 + rate_percentage), period_value) / (Math.pow((1 + rate_percentage), period_value) - 1)))
                 let original_emi = Math.round(emi * period_value)
                 let original_rate = Math.round(original_emi - amount);
-                document.querySelector(".emi-display").innerText = `${emi}`
+                document.querySelector(".emi-display").innerText = `${original_emi}`
                 document.querySelector(".emi-mont").innerText = `${emi}`
                 document.querySelector(".amount-display").innerText = `${amount}`
                 document.querySelector(".intersert-display").innerText = `${original_rate}`
     
-                loan.value = ""
-                rate.value = ""
-                peroid.value = ""
+                // loan.value = ""
+                // rate.value = ""
+                // peroid.value = ""
             }
 
 
@@ -42,9 +42,9 @@ calculate.addEventListener("click", () => {
                 document.querySelector(".amount-display").innerText = `${amount}`
                 document.querySelector(".intersert-display").innerText = `${original_rate}`
     
-                loan.value = ""
-                rate.value = ""
-                peroid.value = ""
+                // loan.value = ""
+                // rate.value = ""
+                // peroid.value = ""
             }
 
 
