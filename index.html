@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="sub">
+            <h2><u>Locan EMI Calculator</u></h2>
+            <span></span>
+            <div class="input">
+                <div>
+                    <label class="loan">Loan Amount:</label>
+                    <br>
+                    <input type="number" class="loani">
+                </div>
+                <br>
+                <div>
+                    <label class="rate">Loan Rate without %</label>
+                    <br>
+                    <input class="ratei" type="number">
+                </div>
+
+            </div>
+            <div class="input2">
+                <div class="peroid">
+                    <label class="in">peroid</label>
+                    <br>
+                    <input class="ini" type="number">
+                </div>
+                <br>
+                <div>
+                    <div class="mon-year">
+                        <label>select</label>
+                        <select id="select">
+                            <option value="select">select</option>
+                            <option value="Month">Month</option>
+                            <option value="Year">Year</option>
+                        </select>
+                    </div>
+                   
+                </div>
+            </div>
+            <button class="cal" type="submit">submit</button>
+        </div>
+
+
+        <div class="display">
+            <h4 >Totaly Loan EMI: <span class="emi-display"></span></h4>
+            <h4 >Principle Amount: <span class="amount-display"></span></h4>
+            <h4 >Amount of Interest: <span class="intersert-display"></span></h4>
+            <h4 >Monthy Emi <span class="emi-mont"></span></h4>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

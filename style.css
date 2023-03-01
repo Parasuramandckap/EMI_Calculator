@@ -1,0 +1,75 @@
+.container{
+    width: 450px;
+    height: 470px;
+    border: 2px solid  rgb(109, 109, 109);
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.sub{
+    padding-left: 40px;
+
+}
+.input{
+    display: flex;
+}
+.input2{
+    display: flex;
+}
+h2{
+    font-weight: 600;
+    font-family: sans-serif;
+}
+label{
+ color: #A12352;
+}
+.cal{
+    background-color:#A12352 ;
+    color: white;
+    border:none;
+    width: 185px;
+    height: 20px;
+}
+body{
+    background-color: #A12352;
+}
+.container{
+    background-color: white;
+}
+.display{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+span{
+    padding-left: 20px;
+    color: #A12352;
+}
+input{
+    height: 30px;
+}
+.ratei{
+    margin-left: 10px;
+}
+.rate{
+    margin-left: 10px;
+}
+.peroid{
+    margin-top: 20px;
+}
+.cal{
+    margin-top: 20px;
+    height: 30px;
+    width: 380px;
+    font-weight: 600;
+}
+u{
+    color: #A12352;
+}
+.mon-year{
+    margin-top: 40px;
+    padding-left: 30px;
+}
+select{
+    border: 2px solid #A12352;
+    background-color: white;
+}
