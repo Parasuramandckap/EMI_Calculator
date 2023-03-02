@@ -8,7 +8,7 @@ console.log(select.value)
 calculate.addEventListener("click", () => {
     if (loan.value !== " " && rate.value !== "" && peroid.value !== "") {
         if (select.value == "Month") {
-            // console.log(select.value)
+            console.log(select.value)
             let amount = loan.value;
             let rate_percentage = rate.value / 1200;
             let period_value = peroid.value
