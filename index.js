@@ -19,7 +19,7 @@ calculate.addEventListener("click", () => {
                 let original_rate = Math.round(original_emi - amount);
                 document.querySelector(".emi-display").innerText = `${original_emi}`
                 document.querySelector(".emi-mont").innerText = `${emi}`
-                document.querySelector(".amount-display").innerText = `${amount}`
+                // document.querySelector(".amount-display").innerText = `${amount}`
                 document.querySelector(".intersert-display").innerText = `${original_rate}`
     
                 // loan.value = ""
@@ -39,7 +39,7 @@ calculate.addEventListener("click", () => {
                 let original_emi = Math.round(emi * period_value)
                 let original_rate = Math.round(original_emi - amount);
                 document.querySelector(".emi-display").innerText = `${original_emi}`
-                document.querySelector(".amount-display").innerText = `${amount}`
+                // document.querySelector(".amount-display").innerText = `${amount}`
                 document.querySelector(".intersert-display").innerText = `${original_rate}`
     
                 // loan.value = ""
