@@ -4,11 +4,11 @@ const rate = document.querySelector(".ratei")
 const peroid = document.querySelector(".ini")
 const calculate = document.querySelector(".cal")
 const select = document.querySelector("#select")
-console.log(select.value)
+//console.log(select.value)
 calculate.addEventListener("click", () => {
     if (loan.value !== " " && rate.value !== "" && peroid.value !== "") {
         if (select.value == "Month") {
-            console.log(select.value)
+            //console.log(select.value)
             let amount = loan.value;
             let rate_percentage = rate.value / 1200;
             let period_value = peroid.value
@@ -18,9 +18,8 @@ calculate.addEventListener("click", () => {
                 let real_value = Math.round(emi)
                 let original_emi = Math.round(emi * period_value)
                 let original_rate = Math.round(original_emi - amount);
-                document.querySelector(".emi-display").innerText = `${real_value}`
-                document.querySelector(".emi-mont").innerText = `${original_emi}`
-                // document.querySelector(".amount-display").innerText = `${amount}`
+                document.querySelector(".loan-emi").innerText = `${real_value}`
+                document.querySelector(".total-payment").innerText = `${original_emi}`
                 document.querySelector(".intersert-display").innerText = `${original_rate}`
     
                 // loan.value = ""
@@ -42,9 +41,8 @@ calculate.addEventListener("click", () => {
                 // console.log(real_value)
                 let original_emi = Math.round(emi * period_value)
                 let original_rate = Math.round(original_emi - amount);
-                document.querySelector(".emi-display").innerText = `${original_emi}`
-                document.querySelector(".emi-mont").innerText = `${real_value}`
-                // document.querySelector(".amount-display").innerText = `${amount}`
+                document.querySelector(".loan-emi").innerText = `${real_value}`
+                document.querySelector(".total-payment").innerText = `${original_emi}`
                 document.querySelector(".intersert-display").innerText = `${original_rate}`
     
                 // loan.value = ""
