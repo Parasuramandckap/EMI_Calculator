@@ -14,11 +14,12 @@ calculate.addEventListener("click", () => {
             let period_value = peroid.value
 
             if(amount && rate_percentage && period_value){
-                let emi = Math.round(amount * rate_percentage * (Math.pow((1 + rate_percentage), period_value) / (Math.pow((1 + rate_percentage), period_value) - 1)))
+                let emi = amount * rate_percentage * (Math.pow((1 + rate_percentage), period_value) / (Math.pow((1 + rate_percentage), period_value) - 1));
+                let real_value = Math.round(emi)
                 let original_emi = Math.round(emi * period_value)
                 let original_rate = Math.round(original_emi - amount);
-                document.querySelector(".emi-display").innerText = `${original_emi}`
-                document.querySelector(".emi-mont").innerText = `${emi}`
+                document.querySelector(".emi-display").innerText = `${real_value}`
+                document.querySelector(".emi-mont").innerText = `${original_emi}`
                 // document.querySelector(".amount-display").innerText = `${amount}`
                 document.querySelector(".intersert-display").innerText = `${original_rate}`
     
@@ -35,10 +36,14 @@ calculate.addEventListener("click", () => {
             let period_value = peroid.value * 12;
 
             if(amount && rate_percentage && period_value){
-                let emi = amount * rate_percentage * (Math.pow((1 + rate_percentage), period_value) / (Math.pow((1 + rate_percentage), period_value) - 1))
+                let emi = amount * rate_percentage * (Math.pow((1 + rate_percentage), period_value) / (Math.pow((1 + rate_percentage), period_value) - 1));
+               // alert(emi)
+                let real_value = Math.round(emi)
+                // console.log(real_value)
                 let original_emi = Math.round(emi * period_value)
                 let original_rate = Math.round(original_emi - amount);
                 document.querySelector(".emi-display").innerText = `${original_emi}`
+                document.querySelector(".emi-mont").innerText = `${real_value}`
                 // document.querySelector(".amount-display").innerText = `${amount}`
                 document.querySelector(".intersert-display").innerText = `${original_rate}`
     
