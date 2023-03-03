@@ -69,7 +69,26 @@ u{
     margin-top: 40px;
     padding-left: 30px;
 }
-select{
+/* select{
     border: 2px solid #A12352;
     background-color: white;
+} */
+.btn{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.yr{
+    background-color:#ffffff ;
+    color: black;
+    /* border:none; */
+    /* width: 185px;
+    height: 20px; */
+    width: 70px;
+    height: 30px;
+}
+
+.show{
+    color: white;
+    /* background-color: #BA55D3; */
+    background-color:#A12352 ;
 }
